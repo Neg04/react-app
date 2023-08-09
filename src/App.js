@@ -1,4 +1,7 @@
+import React from 'react';
+import Weather from './Weather';
 import './App.css';
+
 
 function App() {
   return (
@@ -6,6 +9,7 @@ function App() {
       <div className='container'>
       Weather App
       </div>
+      <Weather />
     </div>
   );
 }
