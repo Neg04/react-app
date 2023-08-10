@@ -5,7 +5,33 @@
     border: 1px solid whitesmoke;
     border-radius: 10px;
     padding: 20px;
+    text-align: left;
+}
+.temp{
+    font-size: 30px;
+}
+.weatherPic {
+    margin-top: 70px;
+}
+.searchButton {
+    color: whitesmoke;
+    margin-top: 4px;
+    background-color:#393e46 ;
+    border: 1px solid #393e46;
+    border-radius: 10px;
+    padding: 4px 15px;
+    transition: 200ms ease-in-out;
+}
+.searchButton:hover {
+    color: whitesmoke;
+    background-color: #5f6775;
+    box-shadow: 1px 3px #cfd6e0;
 }
 ul {
+    margin-top: 40px;
     list-style: none;
+}
+img {
+    width: 80px;
+    margin-top: -15px;
 }
