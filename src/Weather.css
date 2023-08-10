@@ -9,15 +9,14 @@
 }
 .temp{
     font-size: 35px;
-    margin-top: 40px;
-
+}
+.unit {
+    font-size: 15px;
 }
 .weatherPic {
     margin-top: 70px;
 }
-.icon {
-    padding-bottom: 20px;
-}
+
 .searchButton {
     color: whitesmoke;
     margin-top: 4px;
