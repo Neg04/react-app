@@ -34,7 +34,7 @@ export default function Weather(props) {
             <div className="row">
                 <div className="col-md-6">
                     <ul>
-                        <li><h1>{weaatherData.city}</h1></li>
+                        <li><h2>{weaatherData.city}</h2></li>
                     <li>wednesday 07:38, {weaatherData.description}</li>
                  <li>Humidity: {weaatherData.humidity}% , Wind:{Math.round(weaatherData.wind)} km/h</li>
                     </ul>
