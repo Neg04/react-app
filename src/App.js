@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-      Weather App
+      <h3 className='text-light mt-4'>Weather App </h3>
       <Weather defaultCity="Berlin" />
       <p className='text-light'>
          This app is <a href='https://github.com/Neg04/react-app.git'>open-sourced</a> on GitHub.
