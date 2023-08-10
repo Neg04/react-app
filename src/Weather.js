@@ -57,7 +57,7 @@ export default function Weather(props) {
                     </ul>
                 </div>
                 <div className="col-md-6 weatherPic">
-                <WeatherIcon code={weaatherData.icon} /> <span className="temp"><WeatherTemp temp={weaatherData.temp}/></span>
+              <WeatherIcon code={weaatherData.icon} /><span className="temp"><WeatherTemp temp={weaatherData.temp}/></span>
                 </div>
             </div>
         </div>

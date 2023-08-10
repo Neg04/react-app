@@ -9,6 +9,7 @@
 }
 .temp{
     font-size: 35px;
+    margin-bottom: 50px;
 }
 .unit {
     font-size: 15px;
@@ -16,7 +17,9 @@
 .weatherPic {
     margin-top: 70px;
 }
-
+.icon{
+    padding-top: 50px;
+}
 .searchButton {
     color: whitesmoke;
     margin-top: 4px;
