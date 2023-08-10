@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 import axios from "axios";
 import "./Weather.css"
 export default function Weather(props) {
@@ -16,7 +17,7 @@ export default function Weather(props) {
                 city: response.data.city,
                 humidity: response.data.temperature.humidity,
                 description: response.data.condition.description,
-                iconUrl: "http://openweathermap.org/img/wn/03n@2x.png",
+                icon: response.data.condition.icon ,
             }
         );
     }
@@ -55,7 +56,7 @@ export default function Weather(props) {
                     </ul>
                 </div>
                 <div className="col-md-6 weatherPic">
-                <img src={weaatherData.iconUrl} alt={weaatherData.description} /> <span className="temp">{Math.round(weaatherData.temp)}°C </span>
+                <WeatherIcon code={weaatherData.icon} /> <span className="temp">{Math.round(weaatherData.temp)}</span>°C|°F
                 </div>
             </div>
         </div>

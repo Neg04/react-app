@@ -8,10 +8,15 @@
     text-align: left;
 }
 .temp{
-    font-size: 30px;
+    font-size: 35px;
+    margin-top: 40px;
+
 }
 .weatherPic {
-    margin-top: 75px;
+    margin-top: 70px;
+}
+.icon {
+    padding-bottom: 20px;
 }
 .searchButton {
     color: whitesmoke;
@@ -30,8 +35,4 @@
 ul {
     margin-top: 40px;
     list-style: none;
-}
-img {
-    width: 80px;
-    margin-top: -15px;
 }
