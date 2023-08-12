@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherForecast from "./WeatherForecast"
 import WeatherTemp from "./WeatherTemp"
 import axios from "axios";
 import "./Weather.css"
@@ -12,6 +13,7 @@ export default function Weather(props) {
         setWeatherData(
             {
                 ready : true,
+                coordinates : response.data.coordinates,
                 temp: response.data.temperature.current,
                 date: new Date(response.data.time * 1000),
                 wind: response.data.wind.speed,
@@ -57,9 +59,10 @@ export default function Weather(props) {
                     </ul>
                 </div>
                 <div className="col-md-6 weatherPic">
-              <WeatherIcon code={weaatherData.icon} /><span className="temp"><WeatherTemp temp={weaatherData.temp}/></span>
+              <WeatherIcon code={weaatherData.icon} size={50}/><span className="temp"><WeatherTemp temp={weaatherData.temp}/></span>
                 </div>
             </div>
+           <WeatherForecast coord={weaatherData.coordinates} />
         </div>
     ); } else {
         search();
