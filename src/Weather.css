@@ -9,16 +9,12 @@
 }
 .temp{
     font-size: 35px;
-    margin-bottom: 50px;
 }
 .unit {
     font-size: 15px;
 }
 .weatherPic {
-    margin-top: 70px;
-}
-.icon{
-    padding-top: 50px;
+    margin-top: 60px;
 }
 .searchButton {
     color: whitesmoke;
@@ -34,7 +30,7 @@
     background-color: #5f6775;
     box-shadow: 1px 3px #cfd6e0;
 }
-ul {
+.weather-des {
     margin-top: 40px;
     list-style: none;
 }

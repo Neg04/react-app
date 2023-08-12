@@ -52,14 +52,17 @@ export default function Weather(props) {
             </form>
             <div className="row">
                 <div className="col-md-6">
-                    <ul>
+                    <ul className="weather-des">
                         <li><h2>{weaatherData.city}</h2></li>
                     <li><FormattedDate date= {weaatherData.date} /> , {weaatherData.description}</li>
                  <li>Humidity: {weaatherData.humidity}% , Wind:{Math.round(weaatherData.wind)} km/h</li>
                     </ul>
                 </div>
-                <div className="col-md-6 weatherPic">
-              <WeatherIcon code={weaatherData.icon} size={50}/><span className="temp"><WeatherTemp temp={weaatherData.temp}/></span>
+                <div className="col-md-6">
+                    <ul className="weatherPic">
+             <li className="d-inline icon"> <WeatherIcon code={weaatherData.icon} size={50}/> </li>
+             <li className="d-inline temp"><WeatherTemp temp={weaatherData.temp}/></li>
+               </ul>
                 </div>
             </div>
            <WeatherForecast coord={weaatherData.coordinates} />
