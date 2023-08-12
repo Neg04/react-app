@@ -8,5 +8,8 @@
 }
 .temp-max{
     font-size: 15px;
-    margin-left: 5px;
+    margin-left: 6px;
+}
+.forecast-day {
+    margin-bottom: 5px;
 }
